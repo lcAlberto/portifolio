@@ -1,37 +1,23 @@
 <script setup lang="ts">
+import AboutView from '@/components/pages/AboutView.vue'
+import PortifolioView from '@/components/pages/portifolio/PortifolioView.vue'
+import SkillsView from '@/components/pages/SkillsView.vue'
+import IndexView from '@/components/pages/IndexView.vue'
 </script>
 
 <template>
   <main>
-    <div class="chat chat-start">
-      <div class="chat-image avatar">
-        <div class="w-10 rounded-full">
-          <img
-            alt="Tailwind CSS chat bubble component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-        </div>
-      </div>
-      <div class="chat-bubble">It was said that you would, destroy the Sith, not join them.</div>
+    <div class="bg-base-100">
+      <index-view />
     </div>
-    <div class="chat chat-start">
-      <div class="chat-image avatar">
-        <div class="w-10 rounded-full">
-          <img
-            alt="Tailwind CSS chat bubble component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-        </div>
-      </div>
-      <div class="chat-bubble">It was you who would bring balance to the Force</div>
+    <div class="bg-base-100">
+      <about-view />
     </div>
-    <div class="chat chat-start">
-      <div class="chat-image avatar">
-        <div class="w-10 rounded-full">
-          <img
-            alt="Tailwind CSS chat bubble component"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
-        </div>
-      </div>
-      <div class="chat-bubble">Not leave it in Darkness</div>
+    <div class="bg-base-100">
+      <skills-view />
+    </div>
+    <div class="bg-base-100 my-5">
+    <portifolio-view/>
     </div>
   </main>
 </template>

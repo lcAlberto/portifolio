@@ -1,25 +1,30 @@
 <template>
   <div class="navbar flex justify-between bg-base-100">
     <div class="">
-      <a class="btn btn-ghost text-xl">daisyUI</a>
+      <a class="btn btn-ghost text-xl">daisyUI</a>{{activeRoute}}
     </div>
-    <div class="flex justify-center gap-4">
-      <router-link
-        to="/"
-        active-class="text-primary"
+    <ul class="flex justify-center gap-4">
+      <a
+        href="#about"
+        :class="activeRoute === 'text-primary'"
         class="btn btn-ghost"
-      >About</router-link>
-      <router-link
-        to="/portfolio"
-        active-class="text-primary"
+      >About</a>
+      <a
+        href="#skills"
+        :class="activeRoute === 'text-primary'"
         class="btn btn-ghost"
-      >Portifólio</router-link>
-      <router-link
-        to="/contact"
-        active-class="text-primary"
+      >Skills</a>
+      <a
+        href="#portfolio"
+        :class="activeRoute === 'text-primary'"
         class="btn btn-ghost"
-      >Contact</router-link>
-    </div>
+      >Portifólio</a>
+      <a
+        href="#contact"
+        :class="activeRoute === 'text-primary'"
+        class="btn btn-ghost"
+      >Contact</a>
+    </ul>
     <div class="flex-none gap-2">
       <label class="input input-sm bg-secondary focus:outline-0 w-24 md:w-auto flex items-center gap-2">
         <input type="text" class="grow" placeholder="Search" />
@@ -38,7 +43,10 @@
   </div>
 </template>
 <script setup lang="ts">
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
+const activeRoute = route.fullPath
 </script>
 
 
