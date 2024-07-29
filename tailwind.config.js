@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'regal-blue': '#243c5a',
+        "github": "#1f883d",
+        "facebook": "#2176FF",
+        "instagram": "#D300C5",
+      }
+    },
   },
   plugins: [require('daisyui')],//require('daisyui'),
   daisyui: {

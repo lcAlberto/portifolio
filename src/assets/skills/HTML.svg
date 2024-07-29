@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="Devicon-html5-plain.svg"
+   width="512"
+   height="512"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs8" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="0.70996094"
+     inkscape:cx="80.990371"
+     inkscape:cy="157.05089"
+     inkscape:window-width="1854"
+     inkscape:window-height="1052"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4" />
+  <path
+     fill="#e44d26"
+     d="M 31.472595,1.7401302 72.339947,459.6056 255.7263,510.25987 439.61914,459.66278 480.5274,1.7401302 Z M 395.5249,110.14379 l -2.5611,29.29542 -1.12736,13.43456 H 176.7161 l 5.13444,57.18569 h 204.87185 l -1.37245,14.17798 -13.20581,147.535 -0.97216,9.27225 -115.172,31.65231 v 0.008 l -0.13887,0.0736 -115.09438,-30.32068 -7.81402,-86.62 h 56.43003 l 3.99892,44.60077 62.44269,16.66962 h 0.17563 v -2.23024 l 62.72047,-15.82818 6.55184,-71.80481 H 130.44061 L 116.62209,111.5486 115.27824,95.687731 h 281.59462 z"
+     id="path2"
+     style="stroke-width:4.08469" />
+</svg>
