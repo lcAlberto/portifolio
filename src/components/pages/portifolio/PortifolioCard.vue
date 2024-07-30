@@ -20,7 +20,7 @@ const props = defineProps({
   description: { type: String, default: null },
 })
 function getImageUrl() {
-  return new URL(`../../../assets/${props.imagePath}`, import.meta.url)
+  return new URL(`../../../assets/${props.imagePath}`, import.meta.url).toString()
 }
 </script>
 
