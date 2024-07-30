@@ -12,12 +12,13 @@
             <hr class="bg-base-content !h-5"/>
             <div class="timeline-end mb-10 px-3">
               <div class="chat chat-start">
-                <div class="flex gap-4  items-center chat-bubble chat-bubble-accent bg-base-100 rounded-md">
-                  <span class="border border-0 border-r-4 pr-3">2020</span>
+                <div class="flex flex-col lg:flex-row gap-4  items-center chat-bubble chat-bubble-accent bg-base-100 rounded-md">
+                  <span class="border border-0 lg:border-r-4 pr-3">2020</span>
                   <a
                     href="https://www.linkedin.com/company/letscomvc/"
                     target="_blank"
-                    class="text-xl font-bold my-2 hover:text-primary"
+                    data-tip="Página da Let's no Linkedin"
+                    class="text-xl font-bold my-2 hover:text-primary hover:underline tooltip"
                   >
                     Let's Grow Sistemas LTDA
                   </a>
@@ -39,12 +40,13 @@
             <hr class="bg-base-content !h-5"/>
             <div class="timeline-end mb-10 px-3">
               <div class="chat chat-start">
-                <div class="flex gap-4  items-center chat-bubble chat-bubble-accent bg-base-100 rounded-md">
-                  <span class="border border-0 border-r-4 pr-3">2021</span>
+                <div class="flex flex-col lg:flex-row gap-4  items-center chat-bubble chat-bubble-accent bg-base-100 rounded-md">
+                  <span class="border border-0 lg:border-r-4 pr-3">2021</span>
                   <a
                     href="https://www.linkedin.com/company/maps-sa/"
                     target="_blank"
-                    class="text-xl font-bold my-2 hover:text-primary"
+                    data-tip="Página da MAPS no Linkedin"
+                    class="text-xl font-bold my-2 hover:text-primary hover:underline tooltip"
                   >
                     Optimum Soluções Estratégicas/MAPS S.A
                   </a>
@@ -68,12 +70,13 @@
             <hr class="bg-base-content !h-5"/>
             <div class="timeline-end mb-10 px-3">
               <div class="chat chat-start">
-                <div class="flex gap-4  items-center chat-bubble chat-bubble-accent bg-base-100 rounded-md">
-                  <span class="border border-0 border-r-4 pr-3">2023</span>
+                <div class="flex flex-col lg:flex-row gap-4  items-center chat-bubble chat-bubble-accent bg-base-100 rounded-md">
+                  <span class="border border-0 lg:border-r-4 pr-3">2023</span>
                   <a
                     href="https://www.linkedin.com/company/3c_plus/"
                     target="_blank"
-                    class="text-xl font-bold my-2 hover:text-primary"
+                    data-tip="Página da 3Cplus no Linkedin"
+                    class="text-xl font-bold my-2 hover:text-primary hover:underline tooltip"
                   >
                     3Cplus Tecnologia da Informação
                   </a>

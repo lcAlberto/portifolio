@@ -1,7 +1,7 @@
 <template>
   <section
     id="contact"
-    class="pt-10 min-h-96 xl:w-1/2 mx-auto"
+    class="pt-10 px-5 min-h-96 xl:w-1/2 mx-auto"
   >
       <div class="flex items-center justify-center gap-4">
         <hr class="w-1/4 border border-t-2 border-primary"/>
@@ -9,24 +9,24 @@
         <hr class="w-1/4 border border-t-2 border-primary"/>
       </div>
     <div class="flex flex-wrap gap-4 justify-center my-10">
-      <div class="card bg-base-100 shadow-xl p-0 w-2/5">
+      <div class="card bg-base-100 shadow-xl p-0 w-full lg:w-2/5">
         <div class="card-body flex flex-row items-center">
         <font-awesome-icon :icon="['fas', 'envelope']" size="2xl"/>
-          <h2 class="card-title text-primary">lcalbertomatoso2012@gmail.com</h2>
+          <h2 class="card-title text-primary break-all">lcalbertomatoso2012@gmail.com</h2>
         </div>
       </div>
 
-      <div class="card bg-base-100 shadow-xl p-0 w-2/5">
+      <div class="card bg-base-100 shadow-xl p-0 w-full lg:w-2/5">
         <div class="card-body flex flex-row items-center">
           <font-awesome-icon :icon="['fab', 'linkedin-in']" size="2xl"/>
-          <h2 class="card-title text-primary">lucas-alberto-matoso/</h2>
+          <h2 class="card-title text-primary break-words">lucas-alberto-matoso</h2>
         </div>
       </div>
 
-      <div class="card bg-base-100 shadow-xl p-0 w-2/5">
+      <div class="card bg-base-100 shadow-xl p-0 w-full lg:w-2/5">
         <div class="card-body flex flex-row items-center">
           <font-awesome-icon :icon="['fas', 'location-dot']" size="2xl"/>
-          <h2 class="card-title text-primary">Guarapuava, Praraná, Brasil</h2>
+          <h2 class="card-title text-primary break-words">Guarapuava, Praraná, Brasil</h2>
         </div>
       </div>
     </div>

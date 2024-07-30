@@ -32,7 +32,7 @@ import FooterComponent from '@/components/FooterComponent.vue'
     <div class="bg-secondary py-5">
       <contact-view />
     </div>
-    <div class="bg-secondary">
+    <div class="bg-base-100">
       <footer-component />
     </div>
   </main>

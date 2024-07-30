@@ -1,11 +1,11 @@
 <template>
   <section
     id="testimonial"
-    class="pt-10 min-h-96 xl:w-1/2 mx-auto"
+    class="pt-10 min-h-96 w-10/12 xl:w-1/2 mx-auto"
   >
     <h1 class="card-title text-5xl mb-5">Testimonial</h1>
     <div class="flex justify-center items-center">
-    <div class="w-1/2 p-5">
+    <div class="md:w-1/2 p-5">
       <div class="text-xl mt-10 flex">
 <!--        <hr class="w-1/2 border border-t-2 border-primary mt-3 mr-3"/>-->
         <font-awesome-icon :icon="['fas', 'quote-left']" size="2xl" class="text-primary text-5xl -mt-3"/>
@@ -30,7 +30,7 @@
     <div class="xl:w-1/2">
       <img
         src="/src/assets/logo.svg"
-        class=""
+        class="max-w-96 static right-0 float-end"
       >
     </div>
     </div>

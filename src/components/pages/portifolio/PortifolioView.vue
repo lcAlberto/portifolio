@@ -17,9 +17,9 @@
 
       </div>
       <button
-        class="btn btn-primary my-5 w-40"
+        class="btn btn-primary my-5 w-52"
       >
-        View More
+        Ver mais projetos
         <font-awesome-icon :icon="['fas', 'arrow-up-right-from-square']" />
       </button>
     </div>

@@ -1,7 +1,7 @@
 <template>
-  <div class="navbar flex justify-between bg-base-100">
+  <div class="navbar flex lg:flex-row flex-col justify-between bg-base-100 max-w-full">
     <div class="">
-      <a class="btn btn-ghost text-xl">daisyUI</a>{{activeRoute}}
+      <a class="btn btn-ghost text-xl">daisyUI</a>
     </div>
     <ul class="flex justify-center gap-4">
       <a
@@ -25,7 +25,7 @@
         class="btn btn-ghost"
       >Contact</a>
     </ul>
-    <div class="flex-none gap-2">
+    <div class="flex-none hidden lg:block gap-2">
       <label class="input input-sm bg-secondary focus:outline-0 w-24 md:w-auto flex items-center gap-2">
         <input type="text" class="grow" placeholder="Search" />
         <svg
