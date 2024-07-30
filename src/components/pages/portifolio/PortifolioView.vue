@@ -16,12 +16,14 @@
         />
 
       </div>
-      <button
-        class="btn btn-primary my-5 w-52"
+      <a
+        href="https://github.com/lcAlberto/"
+        data-tip="Perfil no Github"
+        class="btn btn-primary my-5 w-52 tooltip flex items-center"
       >
         Ver mais projetos
         <font-awesome-icon :icon="['fas', 'arrow-up-right-from-square']" />
-      </button>
+      </a>
     </div>
   </section>
 </template>
