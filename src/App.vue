@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-hidden">
-    <Navbar/>
+    <Navbar />
     <RouterView />
   </div>
 </template>
@@ -9,7 +9,4 @@ import { RouterView } from 'vue-router'
 import Navbar from '@/components/NavbarComponent.vue'
 </script>
 
-
-<style scoped>
-
-</style>
+<style scoped></style>

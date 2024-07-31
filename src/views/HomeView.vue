@@ -21,13 +21,13 @@ import FooterComponent from '@/components/FooterComponent.vue'
       <skills-view />
     </div>
     <div class="bg-base-100 my-5">
-    <portifolio-view/>
+      <portifolio-view />
     </div>
     <div class="bg-secondary my-5">
       <experience />
     </div>
     <div class="bg-base-100 my-5">
-      <testimonial-view/>
+      <testimonial-view />
     </div>
     <div class="bg-secondary py-5">
       <contact-view />
