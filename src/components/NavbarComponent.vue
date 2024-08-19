@@ -6,40 +6,45 @@
         <font-awesome-icon :icon="['fas', 'bolt']" />
       </a>
       <a
-        href="#about"
         :class="activeRoute === 'text-primary'"
-        class="btn btn-ghost rounded-b-lg rounded-none">
+        class="btn btn-ghost rounded-b-lg rounded-none"
+        @click="scrollTo('about')"
+      >
         About
       </a>
       <a
-        href="#skills"
         :class="activeRoute === 'text-primary'"
-        class="btn btn-ghost rounded-b-lg rounded-none">
+        class="btn btn-ghost rounded-b-lg rounded-none"
+        @click="scrollTo('skills')"
+      >
         Skills
       </a>
       <a
-        href="#experience"
         :class="activeRoute === 'text-primary'"
-        class="btn btn-ghost rounded-b-lg rounded-none">
+        class="btn btn-ghost rounded-b-lg rounded-none"
+        @click="scrollTo('experience')"
+      >
         Experience
       </a>
       <a
-        href="#testimonial"
         :class="activeRoute === 'text-primary'"
-        class="btn btn-ghost rounded-b-lg rounded-none">
+        class="btn btn-ghost rounded-b-lg rounded-none"
+        @click="scrollTo('testimonial')"
+      >
         Testimonial
       </a>
       <a
-        href="#portfolio"
         :class="activeRoute === 'text-primary'"
         class="btn btn-ghost rounded-b-lg rounded-none"
+        @click="scrollTo('portfolio')"
       >
         Portifólio
       </a>
       <a
-        href="#contact"
         :class="activeRoute === 'text-primary'"
-        class="btn btn-ghost rounded-b-lg rounded-none">
+        class="btn btn-ghost rounded-b-lg rounded-none"
+        @click="scrollTo('contact')"
+      >
         Contact
       </a>
       <div class="lg:flex-none gap-2 px-5">
@@ -86,7 +91,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { useTheme } from '@/composables/theme'
 import { watch, ref } from 'vue'
 
@@ -95,6 +100,7 @@ const emits = defineEmits(['theme'])
 const { setTheme } = useTheme()
 
 const route = useRoute()
+const router = useRouter()
 const activeRoute = route.fullPath
 const toggleTheme = ref('default')
 
@@ -102,6 +108,13 @@ watch(() => toggleTheme.value, async (value) => {
   emits('theme', value)
   setTheme(value)
 })
+
+function scrollTo(anchor: string) {
+  const element = document.getElementById(anchor)
+  if (element)
+    element.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' })
+  router.push(`#${anchor}`)
+}
 
 
 </script>
