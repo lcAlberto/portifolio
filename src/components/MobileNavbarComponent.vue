@@ -32,17 +32,19 @@
         <ul>
           <li>
             <a
-              href="#about"
               :class="activeRoute === 'text-primary'"
-              class="btn btn-ghost w-full flex justify-start">
+              class="btn btn-ghost w-full flex justify-start"
+              @click="scrollTo('about')"
+            >
               About
             </a>
           </li>
           <li>
             <a
-              href="#skills"
               :class="activeRoute === 'text-primary'"
-              class="btn btn-ghost w-full flex justify-start">
+              class="btn btn-ghost w-full flex justify-start"
+              @click="scrollTo('skills')"
+            >
               Skills
             </a>
           </li>
@@ -50,7 +52,9 @@
             <a
               href="#experience"
               :class="activeRoute === 'text-primary'"
-              class="btn btn-ghost w-full flex justify-start">
+              class="btn btn-ghost w-full flex justify-start"
+              @click="scrollTo('experience')"
+            >
               Experience
             </a>
           </li>
@@ -58,7 +62,9 @@
             <a
               href="#testimonial"
               :class="activeRoute === 'text-primary'"
-              class="btn btn-ghost w-full flex justify-start">
+              class="btn btn-ghost w-full flex justify-start"
+              @click="scrollTo('testimonial')"
+            >
               Testimonial
             </a>
           </li>
@@ -66,7 +72,9 @@
             <a
               href="#portfolio"
               :class="activeRoute === 'text-primary'"
-              class="btn btn-ghost w-full flex justify-start">
+              class="btn btn-ghost w-full flex justify-start"
+              @click="scrollTo('portfolio')"
+            >
               Portifólio
             </a>
           </li>
@@ -74,7 +82,9 @@
             <a
               href="#contact"
               :class="activeRoute === 'text-primary'"
-              class="btn btn-ghost w-full flex justify-start">
+              class="btn btn-ghost w-full flex justify-start"
+              @click="scrollTo('contact')"
+            >
               Contact
             </a>
           </li>
@@ -84,7 +94,7 @@
   </div>
 </template>
 <script setup lang="ts">
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { useTheme } from '@/composables/theme'
 import { watch, ref } from 'vue'
 
@@ -94,6 +104,8 @@ const open = ref(false)
 const { setTheme } = useTheme()
 
 const route = useRoute()
+const router = useRouter()
+
 const activeRoute = route.fullPath
 const toggleTheme = ref('default')
 
@@ -101,6 +113,13 @@ watch(() => toggleTheme.value, async (value) => {
   emits('theme', value)
   setTheme(value)
 })
+
+function scrollTo(anchor: string) {
+  const element = document.getElementById(anchor)
+  if (element)
+    element.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' })
+  router.push(`#${anchor}`)
+}
 
 
 </script>

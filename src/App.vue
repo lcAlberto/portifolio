@@ -1,5 +1,6 @@
 <template>
   <div
+    id="main"
     :data-theme="theme"
     class="overflow-hidden scroll-smooth"
   >
@@ -10,6 +11,7 @@
       class="!hidden md:!block"
       @theme="(payload) => theme = payload"
     />
+    <scroll-to-home-button />
     <RouterView />
   </div>
 </template>
@@ -18,6 +20,7 @@ import { RouterView } from 'vue-router'
 import Navbar from '@/components/NavbarComponent.vue'
 import { useTheme } from '@/composables/theme'
 import MobileNavbarComponent from '@/components/MobileNavbarComponent.vue'
+import ScrollToHomeButton from '@/components/ScrollToHomeButton.vue'
 
 const { theme } = useTheme()
 

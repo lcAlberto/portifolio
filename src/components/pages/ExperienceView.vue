@@ -5,7 +5,7 @@
       <hr class="bg-primary -mt-2 h-1 w-1/6 mb-10 ml-10" />
       <div class="text-xl pt-5 flex flex-col items-center gap-4">
         <ul class="timeline timeline-compact timeline-snap-icon timeline-vertical w-9/12">
-          <li>
+          <li class="group">
             <hr class="bg-base-content !h-5" />
             <div class="timeline-end mb-10 px-3">
               <div class="chat chat-start">
@@ -30,12 +30,13 @@
               </p>
             </div>
             <div class="timeline-middle mt-5 mb-3">
-              <span class="btn btn-xs btn-circle btn-primary outline outline-offset-4" />
+              <span
+                class="btn btn-xs btn-circle btn-primary outline outline-offset-4 group-hover:animate-pulse cursor-default" />
             </div>
             <hr class="bg-base-content" />
           </li>
 
-          <li>
+          <li class="group">
             <hr class="bg-base-content !h-5" />
             <div class="timeline-end mb-10 px-3">
               <div class="chat chat-start">
@@ -62,12 +63,13 @@
               </p>
             </div>
             <div class="timeline-middle mt-5 mb-3">
-              <span class="btn btn-xs btn-circle btn-primary outline outline-offset-4" />
+              <span
+                class="btn btn-xs btn-circle btn-primary outline outline-offset-4 group-hover:animate-pulse cursor-default" />
             </div>
             <hr class="bg-base-content" />
           </li>
 
-          <li>
+          <li class="group">
             <hr class="bg-base-content !h-5" />
             <div class="timeline-end mb-10 px-3">
               <div class="chat chat-start">
@@ -94,7 +96,8 @@
               </p>
             </div>
             <div class="timeline-middle mt-5 mb-3">
-              <span class="btn btn-xs btn-circle btn-primary outline outline-offset-4" />
+              <span
+                class="btn btn-xs btn-circle btn-primary outline outline-offset-4 group-hover:animate-pulse cursor-default" />
             </div>
             <hr class="bg-base-content" />
           </li>
