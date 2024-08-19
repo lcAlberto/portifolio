@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="flex flex-col md:flex-row-reverse items-center justify-center">
+  <section id="about" class="flex flex-col md:flex-row-reverse items-center justify-center lg:w-9/12 mx-auto">
     <div class="md:w-3/4 min-h-96 mx-auto p-5">
       <h1 class="card-title text-4xl mb-5">Sobre</h1>
       <div class="text-xl mt-5 flex">
