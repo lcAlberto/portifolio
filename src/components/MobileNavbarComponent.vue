@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar !sticky !top-0 flex lg:flex-row flex-col justify-between bg-base-100 max-w-full">
+  <div class="navbar !sticky !top-0 flex lg:flex-row flex-col justify-between max-w-full">
 
     <div
       :class="{'shadow-2xl': open}"

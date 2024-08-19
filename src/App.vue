@@ -2,7 +2,7 @@
   <div
     id="main"
     :data-theme="theme"
-    class="overflow-hidden scroll-smooth"
+    class="overflow-hidden"
   >
     <MobileNavbarComponent
       class="sm:block md:hidden"
