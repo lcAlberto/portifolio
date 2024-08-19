@@ -3,7 +3,13 @@
     :data-theme="theme"
     class="overflow-hidden scroll-smooth"
   >
-    <Navbar @theme="(payload) => theme = payload" />
+    <MobileNavbarComponent
+      class="sm:block md:hidden"
+    />
+    <Navbar
+      class="!hidden md:!block"
+      @theme="(payload) => theme = payload"
+    />
     <RouterView />
   </div>
 </template>
@@ -11,6 +17,7 @@
 import { RouterView } from 'vue-router'
 import Navbar from '@/components/NavbarComponent.vue'
 import { useTheme } from '@/composables/theme'
+import MobileNavbarComponent from '@/components/MobileNavbarComponent.vue'
 
 const { theme } = useTheme()
 

@@ -4,7 +4,7 @@
     <div class="h-72 flex flex-col justify-center items-center">
       <h1 class="text-3xl font-extrabold text-primary">
         Feito com carinho
-        <font-awesome-icon :icon="['fas', 'heart']" />
+        <font-awesome-icon :icon="['fas', 'heart']" beat />
       </h1>
     </div>
   </footer>

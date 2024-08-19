@@ -19,7 +19,10 @@
     </div>
     <div class="avatar xl:w-1/4">
       <div class="mask mask-squircle">
-        <img src="/src/assets/img/1.jpg" class="max-w-96 static right-0 float-end" />
+        <img
+          src="/src/assets/img/1.jpg"
+          class="max-w-96 static right-0 float-end"
+        />
       </div>
     </div>
   </section>
