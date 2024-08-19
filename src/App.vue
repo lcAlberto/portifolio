@@ -1,12 +1,26 @@
 <template>
-  <div class="overflow-hidden">
-    <Navbar />
+  <div
+    :data-theme="theme"
+    class="overflow-hidden scroll-smooth"
+  >
+    <MobileNavbarComponent
+      class="sm:block md:hidden"
+    />
+    <Navbar
+      class="!hidden md:!block"
+      @theme="(payload) => theme = payload"
+    />
     <RouterView />
   </div>
 </template>
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
 import Navbar from '@/components/NavbarComponent.vue'
+import { useTheme } from '@/composables/theme'
+import MobileNavbarComponent from '@/components/MobileNavbarComponent.vue'
+
+const { theme } = useTheme()
+
 </script>
 
 <style scoped></style>

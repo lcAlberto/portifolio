@@ -36,7 +36,7 @@
         class="relative lg:absolute lg:w-1/2 right-10 lg:top-32"
       />
     </div>
-    <div class="flex flex-col gap-2 absolute right-2 bottom-1/2 lg:right-5 lg:bottom-32 p-10">
+    <div class="flex flex-col gap-2 absolute right-2 bottom-52 sm:bottom-1/2 lg:right-5 lg:bottom-32 p-10">
       <a
         href="https://www.linkedin.com/in/lucas-alberto-matoso/"
         target="_blank"
