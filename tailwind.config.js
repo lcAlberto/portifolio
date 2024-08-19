@@ -10,7 +10,20 @@ export default {
         'regal-blue': '#243c5a',
         'github': '#1f883d',
         'facebook': '#2176FF',
-        'instagram': '#D300C5'
+        'instagram': '#D300C5',
+
+        'typescript': 'rgba(49,120,198,0.6)',
+        'vue': 'rgba(60,142,117,0.6)',
+        'nuxt': 'rgba(16,135,117,0.6)',
+        'vite': 'rgba(157,94,255,0.42)',
+        'postgresql': 'rgba(88,99,119,0.8)',
+        'mongo': 'rgba(89,150,54,0.27)',
+        'mysql': 'rgba(0,117,143,0.25)',
+        'docker': 'rgba(29,145,180,0.8)',
+        'laravel': 'rgba(255,45,32,0.19)',
+        'git': 'rgba(240,81,51,0.4)',
+        'ubuntu': 'rgba(221,72,20,0.4)'
+
       }
     }
   },
@@ -42,7 +55,8 @@ export default {
         },
         night: {
           ...require('daisyui/src/theming/themes')['night'],
-          'accent-content': '#fff'
+          'accent-content': '#fff',
+          'secondary': '#0F2429'
         }
       }, 'emerald'
     ]

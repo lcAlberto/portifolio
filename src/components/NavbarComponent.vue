@@ -1,5 +1,5 @@
 <template>
-  <div class="!flex flex-row justify-center items-center bg-base-100 w-full flex-wrap">
+  <div class="!flex flex-row justify-center items-center w-full flex-wrap">
     <ul class="flex flex-wrap justify-center gap-4">
       <a class="btn btn-ghost rounded-b-lg rounded-none text-xl">
         Criado com Vite
@@ -52,7 +52,7 @@
           <div tabindex="0" role="button" class="btn btn-ghost rounded-b-lg rounded-none mt-0 m-1">
             <font-awesome-icon :icon="['fas', 'palette']" />
           </div>
-          <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow-2xl">
+          <ul tabindex="0" class="dropdown-content menu rounded-box z-50 w-52 p-2 shadow-2xl">
             <li @click="toggleTheme = 'emerald'">
               <a>
                 <font-awesome-icon

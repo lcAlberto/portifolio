@@ -1,7 +1,7 @@
 <template>
   <section
     id="home"
-    class="lg:h-screen mx-auto flex flex-col-reverse items-center md:grid md:grid-cols-2 bg-base-100 pb-0"
+    class="lg:h-screen mx-auto flex flex-col-reverse items-center md:grid md:grid-cols-2 pb-0"
   >
     <div id="text" class="flex flex-col justify-center items-start gap-4 p-5 lg:w-9/12 ml-auto">
       <h1 class="text-4xl lg:text-6xl">
