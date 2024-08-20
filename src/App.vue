@@ -6,6 +6,7 @@
   >
     <MobileNavbarComponent
       class="sm:block md:hidden"
+      @theme="(payload) => theme = payload"
     />
     <Navbar
       class="!hidden md:!block"
