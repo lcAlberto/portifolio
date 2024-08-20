@@ -1,7 +1,7 @@
 <template>
   <div
     v-if="show"
-    class="fixed right-2 bottom-52 sm:bottom-1/2 lg:right-5 md:bottom-10 p-10 z-50"
+    class="fixed right-2 bottom-10 lg:right-5 p-10 z-50"
   >
     <button
       class="btn btn-primary btn-circle"

@@ -1,0 +1,63 @@
+{
+  "created_with_vite": "Created with Vite",
+  "navbar": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "testimonial": "Testimonial",
+    "portfolio": "Portifolio",
+    "contact": "Contact"
+  },
+  "themes": {
+    "dark": "Dark",
+    "light": "Light",
+    "default": "Default"
+  },
+  "languages": {
+    "pt-br": "Brazilian Portuguese",
+    "en": "English"
+  },
+  "home": {
+    "iam": "I'm",
+    "front_back_dev": "Front & Backend Web Developer",
+    "get_in_touch": "Call me"
+  },
+  "about_text": "My name is Lucas Alberto Matoso and I come from Guarapuava, a city in the interior of the state of Paraná in Brazil. I am passionate about technology, I have an extroverted personality and a high commitment, I constantly look for challenges that allow me to grow and contribute significantly to development projects. I have a solid background in Technology in Systems Analysis and Development. Despite being from the countryside, I always dreamed of being a great businessman or creating great things and making other people's lives better. With this in mind, I completed my degree at Faculdade Guairacá with the help of my father who sacrificed many things and always encouraged me to be better. Leaving their house in Inácio Martins for the neighboring city was the first step to starting my career as a developer.",
+  "testimonial_text": "I worked with Lucas for just over 1 year. Excellent front-end developer, focused on Vue.js, but able to respond quickly to activities and learn as needed. I definitely recommend it for a front-end developer position.",
+  "titles": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "testimonial": "Testimonial",
+    "portfolio": "Portifolio",
+    "contact": "Contact"
+  },
+  "portfolio_titles": {
+    "batcaverna": "Batcave",
+    "splash": "Splash",
+    "gold_fich": "Gold Finch"
+  },
+  "portfolio_legends": {
+    "batcaverna": "System that Batman and the Justice League use on their missions!",
+    "splash": "Prototype of a landing page for an English school",
+    "gold_fich": "Investment platform, on demand"
+  },
+  "experience": {
+    "titles": {
+      "fullstack_developer": "Full-stack developer",
+      "front_developer": "front-end developer"
+    },
+    "descriptions": {
+      "lets": "Software House. Development of on-demand systems. One of them, poster system for retail, printing control, coordinate editor, spreadsheet import",
+      "optimum": "Optimum was a company subordinate to MAPS S. A, closed in April 2023, whose main product was a case management system for lawyers, publications of diaries and publications of their processes. Development of web applications for the company's products.",
+      "3cplus": "Front end development of the main product. Complete omnichannel WhatsApp, SMS and CRM platform 100% in the cloud aimed at callcenters. Use of the Official Whatsapp API, involving the consumption of REST API. Real-time rendering triggering chat events."
+    },
+    "tooltips_lets": "Let's page on Linkedin",
+    "tooltips_optimum": "MAPS Linkedin page",
+    "tooltips_3cplus": "3Cplus page on Linkedin"
+  },
+  "testimonial": "I worked with Lucas for just over 1 year. Excellent front-end developer, focused on Vue.js, but able to respond quickly to activities and learn as needed. I definitely recommend it for a front-end developer position.",
+  "made_with_care": "Made with",
+  "see_more_projects": "See more projects",
+  "github_profile": "Profile on Github"
+}

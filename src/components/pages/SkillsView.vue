@@ -1,7 +1,9 @@
 <template>
   <section id="skills" class="pt-10 flex justify-center">
     <div class="xl:w-3/4 min-h-96 mx-auto p-5 flex flex-col items-center">
-      <h1 class="text-4xl font-bold mb-5">Skills</h1>
+      <h1 class="text-4xl font-bold mb-5">
+        {{ $t('titles.skills') }}
+      </h1>
       <div class="mt-5 flex flex-wrap items-center justify-center gap-5">
         <div class="card bg-typescript hover:bg-typescript md:bg-secondary h-64 w-64 shadow-xl">
           <div class="card-body">

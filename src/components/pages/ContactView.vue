@@ -2,7 +2,9 @@
   <section id="contact" class="pt-10 px-5 min-h-96 xl:w-1/2 mx-auto">
     <div class="flex items-center justify-center gap-4">
       <hr class="w-1/4 border border-t-2 border-primary" />
-      <h1 class="card-title text-5xl">Entre em contato</h1>
+      <h1 class="card-title text-5xl">
+        {{ $t('titles.contact') }}
+      </h1>
       <hr class="w-1/4 border border-t-2 border-primary" />
     </div>
     <div class="flex flex-wrap gap-4 justify-center my-10">

@@ -5,8 +5,8 @@
   >
     <div id="text" class="flex flex-col justify-center items-start gap-4 p-5 lg:w-9/12 ml-auto">
       <h1 class="text-4xl lg:text-6xl">
-        Sou <span class="text-primary">Lucas Alberto</span>
-        Desenvolvedor Web Front & Backend
+        {{ $t('home.iam') }} <span class="text-primary">Lucas Alberto</span>
+        {{ $t('home.front_back_dev') }}
       </h1>
       <div class="relative group lg:my-5 md:mt-14">
         <div class="relative w-56 h-14 opacity-90 overflow-hidden rounded-xl bg-secondary z-10">
@@ -20,7 +20,7 @@
               href="#contact"
               class="input text-sm font-semibold text-primary h-full opacity-90 w-full rounded-xl flex items-center justify-center"
             >
-              Entre em contato!
+              {{ $t('home.get_in_touch') }}
             </a>
           </div>
           <div

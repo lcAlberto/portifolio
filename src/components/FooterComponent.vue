@@ -3,7 +3,7 @@
     <hr class="w-screen border border-t-2 border-base-100 opacity-25" />
     <div class="h-72 flex flex-col justify-center items-center">
       <h1 class="text-3xl font-extrabold text-primary">
-        Feito com carinho
+        {{ $t('made_with_care') }}
         <font-awesome-icon :icon="['fas', 'heart']" beat />
       </h1>
     </div>

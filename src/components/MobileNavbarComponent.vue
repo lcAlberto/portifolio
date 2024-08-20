@@ -23,7 +23,7 @@
         />
         <div>
           <a class="btn btn-ghost text-xl">
-            Criado com Vite
+            {{ $t('created_with_vite') }}
             <font-awesome-icon :icon="['fas', 'bolt']" />
           </a>
         </div>
@@ -36,7 +36,7 @@
               class="btn btn-ghost w-full flex justify-start"
               @click="scrollTo('about')"
             >
-              About
+              {{ $t('navbar.about') }}
             </a>
           </li>
           <li>
@@ -45,7 +45,7 @@
               class="btn btn-ghost w-full flex justify-start"
               @click="scrollTo('skills')"
             >
-              Skills
+              {{ $t('navbar.skills') }}
             </a>
           </li>
           <li>
@@ -55,7 +55,7 @@
               class="btn btn-ghost w-full flex justify-start"
               @click="scrollTo('experience')"
             >
-              Experience
+              {{ $t('navbar.experience') }}
             </a>
           </li>
           <li>
@@ -65,7 +65,7 @@
               class="btn btn-ghost w-full flex justify-start"
               @click="scrollTo('testimonial')"
             >
-              Testimonial
+              {{ $t('navbar.testimonial') }}
             </a>
           </li>
           <li>
@@ -75,7 +75,7 @@
               class="btn btn-ghost w-full flex justify-start"
               @click="scrollTo('portfolio')"
             >
-              Portifólio
+              {{ $t('navbar.portfolio') }}
             </a>
           </li>
           <li>
@@ -85,10 +85,90 @@
               class="btn btn-ghost w-full flex justify-start"
               @click="scrollTo('contact')"
             >
-              Contact
+              {{ $t('navbar.contact') }}
             </a>
           </li>
         </ul>
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item">
+            <input type="radio" name="my-accordion-4 h-1" />
+            <div class="collapse-title text-sm font-medium">
+              <font-awesome-icon :icon="['fas', 'palette']" />
+              Themes
+            </div>
+            <div class="collapse-content bg-base-100 rounded-t-none rounded-b-badge p-0">
+              <ul tabindex="0" class=" menu w-full">
+                <li @click="toggleTheme = 'emerald'">
+                  <a>
+                    <font-awesome-icon
+                      :icon="['fas', 'sun']"
+                      size="lg"
+                      class="swap-on"
+                    />
+                    {{ $t('themes.light') }}
+                  </a>
+                </li>
+                <li @click="toggleTheme = 'night'">
+                  <a>
+                    <font-awesome-icon
+                      :icon="['fas', 'moon']"
+                      size="lg"
+                      class="swap-off"
+                    />
+                    {{ $t('themes.dark') }}
+                  </a>
+                </li>
+                <li @click="toggleTheme = 'default'">
+                  <a>
+                    <font-awesome-icon
+                      :icon="['fas', 'gears']"
+                      size="lg"
+                      class="swap-on"
+                    />
+                    {{ $t('themes.default') }}
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item">
+            <input type="radio" name="my-accordion-4 h-1" />
+            <div class="collapse-title text-sm font-medium">
+              <font-awesome-icon :icon="['fas', 'earth-americas']" />
+              Languages
+            </div>
+            <div class="collapse-content bg-base-100 rounded-t-none rounded-b-badge p-0">
+              <ul tabindex="0" class=" menu w-full">
+                <li @click="changeLanguage('pt-BR')">
+                  <a class="flex">
+                    <img
+                      src="/src/assets/img/flags/br.png"
+                      alt="br-flag"
+                      class="w-10"
+                    >
+                    <span>{{ $t('languages.pt-br') }}</span>
+                  </a>
+                </li>
+                <li
+                  @click="changeLanguage('en')"
+                >
+                  <a class="flex">
+                    <img
+                      src="/src/assets/img/flags/us.png"
+                      alt="us-flag"
+                      class="w-10"
+                    >
+                    <span>{{ $t('languages.en') }}</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -97,6 +177,7 @@
 import { useRoute, useRouter } from 'vue-router'
 import { useTheme } from '@/composables/theme'
 import { watch, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const emits = defineEmits(['theme'])
 const open = ref(false)
@@ -108,6 +189,7 @@ const router = useRouter()
 
 const activeRoute = route.fullPath
 const toggleTheme = ref('default')
+const { locale } = useI18n()
 
 watch(() => toggleTheme.value, async (value) => {
   emits('theme', value)
@@ -121,7 +203,9 @@ function scrollTo(anchor: string) {
   router.push(`#${anchor}`)
 }
 
-
+function changeLanguage(lang: string) {
+  locale.value = lang
+}
 </script>
 
 <style scoped></style>
