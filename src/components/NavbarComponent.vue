@@ -51,7 +51,7 @@
         <div tabindex="0" role="button" class="btn btn-ghost rounded-b-lg rounded-none mt-0 m-1">
           <font-awesome-icon :icon="['fas', 'palette']" />
         </div>
-        <ul tabindex="0" class="dropdown-content menu rounded-box z-50 w-52 p-2 shadow-2xl">
+        <ul tabindex="0" class="dropdown-content bg-base-100 menu rounded-box z-50 w-52 p-2 shadow-2xl">
           <li @click="toggleTheme = 'emerald'">
             <a>
               <font-awesome-icon
@@ -89,7 +89,7 @@
         <div tabindex="0" role="button" class="btn btn-ghost rounded-b-lg rounded-none mt-0 m-1">
           <font-awesome-icon :icon="['fas', 'earth-americas']" />
         </div>
-        <ul tabindex="0" class="dropdown-content menu rounded-box z-50 w-52 p-2 shadow-2xl">
+        <ul tabindex="0" class="dropdown-content bg-base-100 menu rounded-box z-50 w-52 p-2 shadow-2xl">
           <li
             class="flex"
             @click="changeLanguage('pt-BR')"
